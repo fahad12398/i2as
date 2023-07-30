@@ -30,7 +30,7 @@ def generate_story(scenario):
     """
 
     prompt = PromptTemplate(template=template, input_variables=["scenario"])
-    llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b-instruct", model_kwargs={"temperature": 1})
+    llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b-instruct")
     story_llm = LLMChain(llm=llm, prompt=prompt, verbose=True)
 
     story = story_llm.predict(scenario=scenario)
