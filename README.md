@@ -1,3 +1,3 @@
 # i2as
 
-A Python Script which Converts the provided image into a Short Story.
+A Streamlit app which provided an image creates a Short Story.
